@@ -1,0 +1,66 @@
+.homepage {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    filter: brightness(0.5); /* Adjust the brightness of the video if needed */
+    object-fit: cover;
+}
+.Display-content{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+}
+.physique-text{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px; 
+    color: blue;
+}
+.button-joinTeam{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.join-my-team{
+    background: blue;
+    padding: 15px;
+    border: none;
+    font-family: 700;
+    cursor: pointer;
+    color: white;
+    border-radius: 20px;
+}
+.moving-text {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 2rem; /* Adjust the size as needed */
+    font-weight: bold;
+    color: #fff;
+    animation: moveText 10s linear infinite; /* 10s for continuous animation */
+}
+.fitness-logo{
+    display: flex;
+    justify-content: center;
+}
+@keyframes moveText {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
